@@ -6,5 +6,8 @@ winners:
 losers: 
 - Jeremy
 played-date: June 11, 2018
+trivia: 
+- text: |-
+    Jeremy made 28 cards during his pregame
 ---
 Some info about the game TBA.

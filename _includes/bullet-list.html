@@ -1,0 +1,10 @@
+<ul>
+    {% for item in include.items %}
+    <li>
+        {{item.text}}
+        {% if item.children %}
+            {% include bullet-list.html items=item.children %}
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>

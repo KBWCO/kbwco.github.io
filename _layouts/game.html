@@ -148,3 +148,8 @@ layout: default
 
 <h2 id="cards-created">Cards Created</h2>
 {% include card-grid.html cards=all-cards-created %}
+
+{% if page.trivia %}
+<h2 id="trivia">Trivia</h2>
+{% include bullet-list.html items=page.trivia %}
+{% endif %}

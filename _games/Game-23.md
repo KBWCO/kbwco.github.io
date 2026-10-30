@@ -10,5 +10,10 @@ game-ending-condition: |-
 pre-drawn-cards: 314
 blanks: 86
 played-date: December 18, 2023
+trivia: 
+- text: |-
+    Brett made a bunch of the Zodiac cards this game
+- text: |-
+    The other Zodiac cards I think came up naturally
 ---
 Some info about the game TBA.

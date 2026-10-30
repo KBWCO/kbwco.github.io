@@ -12,5 +12,8 @@ game-ending-condition: |-
 pre-drawn-cards: 274
 blanks: 76
 played-date: May 22, 2019
+trivia: 
+- text: |-
+    Brett lost by playing Bobblehead Disease on himself and not dealing with it.
 ---
 Some info about the game TBA.
