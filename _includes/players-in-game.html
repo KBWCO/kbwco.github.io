@@ -1,0 +1,11 @@
+{% assign game = include.game %}
+{%- if game.players -%}
+{%- assign players = game.players -%}
+{%- else -%}
+{%- assign players = game.winners -%}
+{%- for loser in game.losers -%}
+{%- assign players = players | push: loser -%}
+{%- endfor -%}
+{%- endif -%}
+{%- assign players = players | sort -%}
+{{players | join: ","}}

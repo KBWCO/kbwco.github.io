@@ -42,15 +42,10 @@ layout: default
     {%- endfor -%}
   {%- endif -%}
 {%- endfor -%}
-{%- if page.players -%}
-{%- assign players = page.players -%}
-{%- else -%}
-{%- assign players = page.winners -%}
-{%- for loser in page.losers -%}
-{%- assign players = players | push: loser -%}
-{%- endfor -%}
-{%- endif -%}
-{%- assign players = players | sort -%}
+{%- capture players -%}
+    {%- include players-in-game.html game=page -%}
+{%- endcapture -%}
+{%- assign players = players | split: "," -%}
 <div class="infobox">
     <div class="infobox-title">{{page.title}}</div>
     {% if page.image.path -%}
